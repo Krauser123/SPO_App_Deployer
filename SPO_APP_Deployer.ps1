@@ -64,7 +64,7 @@ do
             StandardDeploy -FullPath 'URL_To_Main_Folder_Of_Your_App_Project2' -PackgName 'sharepoint\solution\YOUR_PACKAGE_NAME2.sppkg'
          }
          '3' {
-			      StandardDeploy -FullPath 'URL_To_Main_Folder_Of_Your_App_Project3' -PackgName 'sharepoint\solution\YOUR_PACKAGE_NAME3.sppkg'
+	    StandardDeploy -FullPath 'URL_To_Main_Folder_Of_Your_App_Project3' -PackgName 'sharepoint\solution\YOUR_PACKAGE_NAME3.sppkg'
          }
          '4' {
             StandardDeploy -FullPath 'URL_To_Main_Folder_Of_Your_App_Project1' -PackgName 'sharepoint\solution\YOUR_PACKAGE_NAME1.sppkg'
