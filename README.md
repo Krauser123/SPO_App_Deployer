@@ -1,8 +1,8 @@
 # SPO_App_Deployer
-Script to made your App deploys to Sharepoint Online easier. Feel free to edit or modify it.
+This script are made to make your app deploys to Sharepoint Online easier. Feel free to edit or modify it. 
 
-You can add more menu items or params following your own needs.
-
+* Add more functionality or remove all useless stuff if you only want to deploy one package.
+* Add more menu items or params following your own needs.
 
 ## Requiriments
 * Gulp.js (https://gulpjs.com/)
