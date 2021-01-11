@@ -1,5 +1,5 @@
 # SPO_App_Deployer
-This script are made to make your app deploys to Sharepoint Online easier. Feel free to edit or modify it. 
+This script are made to help you at deploy apps to Sharepoint Online. Feel free to edit or modify it. 
 
 * Add more functionality or remove all useless stuff if you only want to deploy one package.
 * Add more menu items or params following your own needs.
