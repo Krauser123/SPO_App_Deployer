@@ -4,17 +4,16 @@
 
 function Show-Menu
 {
-    #Clear-Host
-    Write-Host '================ SPO APP Deployer ================'
-    Write-Host 'Use this script carefully - Check URL and user twice.' -f red
-    Write-Host 'Three time if you are trying to done something in PRODUCTION environments' -f red
-    Write-Host '========================================================'
+    Write-Output '================ SPO APP Deployer ================'
+    Write-Output 'Use this script carefully - Check URL and user twice.' -f red
+    Write-Output 'Three time if you are trying to done something in PRODUCTION environments' -f red
+    Write-Output '========================================================'
     
-    Write-Host '1: Press '1' to deploy 'YOUR_PACKAGE_FRIENDLY_NAME1'.'
-    Write-Host '2: Press '2' to deploy 'YOUR_PACKAGE_FRIENDLY_NAME2.''
-    Write-Host '3: Press '3' to deploy 'YOUR_PACKAGE_FRIENDLY_NAME3'.'
-    Write-Host '4: Press '4' to deploy all apps.'
-    Write-Host 'Q: Press 'Q' to quit.'
+    Write-Output '1: Press '1' to deploy 'YOUR_PACKAGE_FRIENDLY_NAME1'.'
+    Write-Output '2: Press '2' to deploy 'YOUR_PACKAGE_FRIENDLY_NAME2.''
+    Write-Output '3: Press '3' to deploy 'YOUR_PACKAGE_FRIENDLY_NAME3'.'
+    Write-Output '4: Press '4' to deploy all apps.'
+    Write-Output 'Q: Press 'Q' to quit.'
 }
 
 function StandardDeploy
@@ -45,16 +44,16 @@ function StandardDeploy
 #              #
 
 #First ask per credentials
-Clear-Host
-$tennantUrl = Read-Host 'URL of tennant to connect'
-Write-Host 'You re trying to connect to ' -f yellow -NoNewline
-Write-Host -f red $tennantUrl 
+Clear-Output
+$tennantUrl = Read-Output 'URL of tennant to connect'
+Write-Output 'You re trying to connect to ' -f yellow -NoNewline
+Write-Output -f red $tennantUrl 
 Connect-PnPOnline -Url $tennantUrl -Credentials (Get-Credential)
 
 do
  {
     Show-Menu
-     $selection = Read-Host 'Please select a option'
+     $selection = Read-Output 'Please select a option'
      switch ($selection)
      {
          '1' {
